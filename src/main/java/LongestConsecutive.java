@@ -1,6 +1,9 @@
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 128. 最长连续序列 https://leetcode.cn/problems/longest-consecutive-sequence
+ */
 public class LongestConsecutive {
     public int longestConsecutive(int[] nums) {
         Set<Integer> set = new HashSet<>();

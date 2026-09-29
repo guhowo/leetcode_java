@@ -4,7 +4,7 @@ import java.util.*;
  * leetcode 15. 三数之和 https://leetcode.cn/problems/3sum
  * 思路：采用铆钉一个元素后再用双指针
  */
-public class TreeSum {
+public class ThreeSum {
     public List<List<Integer>> threeSum(int[] nums) {
         int target = 0;
         int length = nums.length;

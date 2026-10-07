@@ -1,8 +1,8 @@
 /**
- * leetcode 704. 二分查找
- * https://leetcode.cn/problems/binary-search/description/
+ * leetcode 33. 搜索旋转排序数组
+ * https://leetcode.cn/problems/search-in-rotated-sorted-array/description/
  */
-public class Search {
+public class SearchTarget {
     public int search(int[] nums, int target) {
         int length = nums.length;
         int left = 0, right = length-1;

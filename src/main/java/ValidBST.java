@@ -25,24 +25,24 @@ public class ValidBST {
     }
 
     //方法二：中序遍历
-    List<Integer> list = new ArrayList<>();
+    Integer last = null;
+    boolean ans = true;
     public boolean isValidBSTV2(TreeNode root) {
         traverse(root);
-        for (int i=0; i<list.size()-1; i++) {
-            if (list.get(i) >= list.get(i+1)) {
-                return false;
-            }
-        }
+        return ans;
 
-        return true;
     }
 
     void traverse(TreeNode root) {
-        if (root==null) {
+        if (root == null) {
             return;
         }
         traverse(root.left);
-        list.add(root.val);
+        if (last != null && last >= root.val) {
+            ans = false;
+            return;
+        }
+        last = root.val;
         traverse(root.right);
     }
 }
